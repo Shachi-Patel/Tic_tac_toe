@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&family=Rubik+Moonrocks&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color:rgb(53, 77, 91);
+    color: beige;
+    height: 65px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 27px;
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Rubik Moonrocks', cursive;
+}
+nav ul{
+list-style-type: none;
+}
+.gameContainer{
+    background-color: rgb(53, 77, 91);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Rubik Moonrocks', cursive;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(170, 135, 203);
+}
+.Info {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    /* margin-top: 30px; */
+    word-spacing: 1px ;
+}
+.gameInfo{
+    padding: 0 50px;
+    margin-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: rgb(105, 118, 125);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 800px)
+{
+.gameContainer{
+    flex-wrap: wrap;
+}
+.gameInfo{
+    margin-top: 35px;
+}
+.gameInfo h1{
+    font-size: 1.2rem;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+}
+}
